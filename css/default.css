@@ -90,7 +90,7 @@ header {
     text-align: center;
 }
 .content dl dd h3 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -134,6 +134,7 @@ header {
        que width do elemento à esquerda.
         ...ou se pôe uma margem direita naquele elemento.
     */
+    line-height: 24px;
 }
 
 /* ----------------------------- */
