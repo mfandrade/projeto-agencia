@@ -56,3 +56,24 @@ header .welcome h2 {
     font-size: 26px;
     margin-bottom: 25px;
 }
+/* ---------- */
+/* 
+    283044
+    78A1BB
+    EBF5EE
+    BFA89E
+*/
+#container section dl {
+    margin: 50px 10%; /* .agenciax.right .welcome.padding-left */
+}
+
+#container section dl dt {
+    display: block;
+    width: 200px;
+    height: 70px;
+    float: left;
+    clear: both;
+}
+
+#container section dl dt dd {
+}
