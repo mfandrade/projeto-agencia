@@ -1,21 +1,22 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: gray;
+    background-color: #EEE;
 }
 
 #container {
-    background-color: white;
-    max-width: 1280px; /* capa2.jpg width */
+    background-color: #FFF;
+    max-width: 1280px;
+    /* capa2.jpg width */
     margin: 0 auto;
-    box-shadow: 15px 20px 30px #333;
+    box-shadow: 10px 10px 30px #999;
 }
 
 header {
     position: relative;
     width: 100%;
     height: 600px;
-    background: gray url(../img/capa2.jpg) center center/cover no-repeat; 
-                /* color image posx posy/size repeat */
+    background: gray url(../img/capa2.jpg) center center/cover no-repeat;
+    /* color image posx posy/size repeat */
 }
 
 .agenciax-title {
@@ -36,11 +37,12 @@ header {
     padding-top: 65px;
     padding-bottom: 20px;
 }
+
 .agenciax-title p {
     font-size: 20px;
 }
 
-header .welcome {
+.welcome {
     position: absolute;
     width: 100%;
     height: 175px;
@@ -52,10 +54,11 @@ header .welcome {
     padding: 30px 30% 10px 10%;
 }
 
-header .welcome h2 {
+.welcome h2 {
     font-size: 26px;
     margin-bottom: 25px;
 }
+
 /* ---------- */
 /* 
     283044
@@ -63,17 +66,75 @@ header .welcome h2 {
     EBF5EE
     BFA89E
 */
-#container section dl {
-    margin: 50px 10%; /* .agenciax.right .welcome.padding-left */
+.content {
+    /* preferência de trabalhar com padding que com margin */
+    padding: 30px 30% 0 10%;
+    /* .welcome:padding-top .agenciax-title:right .welcome:padding-left */
+
 }
 
-#container section dl dt {
-    display: block;
+.content dl dt,
+.content dl dd {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.content dl dt {
     width: 200px;
-    height: 70px;
     float: left;
     clear: both;
+
+    font-size: 22px;
+    font-weight: normal;
+    color: #FFF;
+    margin-right: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content dl dd h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
-#container section dl dt dd {
+
+.content dl dt:nth-of-type(n+1) {
+    background-color: #A4B494;
+}
+.content dl dd:nth-of-type(n+1) h3 {
+    color: #A4B494;
+}
+
+.content dl dt:nth-of-type(n+2) {
+    background-color: #519872;
+}
+.content dl dd:nth-of-type(n+2) h3 {
+    color: #519872;
+}
+
+.content dl dt:nth-of-type(n+3) {
+    background-color: #3B5249;
+}
+.content dl dd:nth-of-type(n+3) h3 {
+    color: #3B5249;
+}
+
+.content dl dt:nth-of-type(n+4) {
+    background-color: #34252F;
+}
+.content dl dd:nth-of-type(n+4) h3 {
+    color: #34252F;
+}
+
+
+.content dl dd {
+    /* border: 1px dotted orange; */
+    /* como o item está flutuando, o espaço para descolar aqui deve ser maior
+       que width do elemento à esquerda.
+        ...ou se pôe uma margem direita naquele elemento.
+    */
+
 }
