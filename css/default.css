@@ -60,12 +60,6 @@ header {
 }
 
 /* ---------- */
-/* 
-    283044
-    78A1BB
-    EBF5EE
-    BFA89E
-*/
 .content {
     /* preferência de trabalhar com padding que com margin */
     padding: 30px 30% 0 10%;
@@ -76,7 +70,8 @@ header {
 .content dl dt,
 .content dl dd {
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .content dl dt {
@@ -87,7 +82,7 @@ header {
     font-size: 22px;
     font-weight: normal;
     color: #FFF;
-    margin-right: 20px;
+    margin-right: 25px;
     
     display: flex;
     justify-content: center;
@@ -95,37 +90,40 @@ header {
     text-align: center;
 }
 .content dl dd h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-
-.content dl dt:nth-of-type(n+1) {
+/* 
+    https://coolors.co/bec5ad-a4b494-519872-3b5249-34252f
+*/
+.content dl dt:nth-of-type(1) {
     background-color: #A4B494;
 }
-.content dl dd:nth-of-type(n+1) h3 {
+.content dl dd:nth-of-type(1) h3 {
     color: #A4B494;
 }
 
-.content dl dt:nth-of-type(n+2) {
+.content dl dt:nth-of-type(2) {
     background-color: #519872;
 }
-.content dl dd:nth-of-type(n+2) h3 {
+.content dl dd:nth-of-type(2) h3 {
     color: #519872;
 }
 
-.content dl dt:nth-of-type(n+3) {
+.content dl dt:nth-of-type(3) {
     background-color: #3B5249;
 }
-.content dl dd:nth-of-type(n+3) h3 {
+.content dl dd:nth-of-type(3) h3 {
     color: #3B5249;
 }
 
-.content dl dt:nth-of-type(n+4) {
+.content dl dt:nth-of-type(4) {
     background-color: #34252F;
 }
-.content dl dd:nth-of-type(n+4) h3 {
+.content dl dd:nth-of-type(4) h3 {
     color: #34252F;
 }
 
@@ -136,5 +134,8 @@ header {
        que width do elemento à esquerda.
         ...ou se pôe uma margem direita naquele elemento.
     */
-
 }
+
+/* ----------------------------- */
+
+
