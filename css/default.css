@@ -138,5 +138,37 @@ header {
 }
 
 /* ----------------------------- */
+footer {
+    background-image: url(../img/rodape.jpg);
+    background-position: center center;
+    height: 500px;
+}
 
+footer ul {
+    position: relative;
+    padding: 30px 10%;
+}
 
+footer li {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+
+    background-color: #FFF;
+    color: #999;
+    font-size: 18px;
+    line-height: 20px;
+
+    text-align: center;
+    box-sizing: border-box;
+    padding: 24px;
+}
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer i {
+    display: block;
+    font-size: 52px;
+    margin-bottom: 24px;
+}
