@@ -5,7 +5,7 @@ body {
 
 #container {
     background-color: #FFF;
-    max-width: 1280px;
+    max-width: 1200px;
     /* capa2.jpg width */
     margin: 0 auto;
     box-shadow: 10px 10px 30px #999;
@@ -62,7 +62,7 @@ header {
 /* ---------- */
 .content {
     /* preferência de trabalhar com padding que com margin */
-    padding: 30px 30% 0 10%;
+    padding: 30px 25% 0 10%;
     /* .welcome:padding-top .agenciax-title:right .welcome:padding-left */
 
 }
@@ -75,7 +75,8 @@ header {
 }
 
 .content dl dt {
-    width: 200px;
+    width: 220px;
+    border-radius: 5px;
     float: left;
     clear: both;
 
@@ -141,34 +142,62 @@ header {
 footer {
     background-image: url(../img/rodape.jpg);
     background-position: center center;
-    height: 500px;
+    width: 100%;
+    height: 600px;
 }
 
 footer ul {
-    position: relative;
-    padding: 30px 10%;
+    padding: 30px 10% 0;
+    /*height: 250px; /* li height + padding */
 }
 
 footer li {
     float: left;
     width: 30%;
+    height: 230px;
     margin-right: 5%;
-
+    
     background-color: #FFF;
     color: #999;
     font-size: 18px;
-    line-height: 20px;
-
+    line-height: 22px;
+    
     text-align: center;
-    box-sizing: border-box;
-    padding: 24px;
+    box-sizing: border-box; /* ??? */
+    padding: 20px;
 }
 footer li:last-child {
-    margin-right: 0;
+    margin: 0;
 }
 
 footer i {
     display: block;
     font-size: 52px;
     margin-bottom: 24px;
+}
+
+/* */
+footer form {
+    clear: both; /* necessário para não se referir à altura perdida do ul */
+    padding: 20px 10% 30px;
+}
+footer input, footer textarea, footer button {
+    display: block;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: .6em;
+    padding: .4em;
+}
+footer button {
+    background-color: #CCC;
+    width: 100px;
+    height: 2em;
+    border: #333;
+}
+footer button:hover {
+    background-color: #333;
+    border: #CCC;
+    color: #CCC;
+    transition: .3s;
 }
