@@ -5,8 +5,7 @@ body {
 
 #container {
     background-color: #FFF;
-    max-width: 1200px;
-    /* capa2.jpg width */
+    max-width: 1200px;  /* 1280 capa2.jpg width */
     margin: 0 auto;
     box-shadow: 10px 10px 30px #999;
 }
@@ -142,14 +141,12 @@ header {
 footer {
     background-image: url(../img/rodape.jpg);
     background-position: center center;
-    width: 100%;
-    height: 600px;
+    background-size: cover;
+    height: 800px;
+    padding: 30px 10%;
+    box-sizing: border-box; /* por que mesmo? */
 }
 
-footer ul {
-    padding: 30px 10% 0;
-    /*height: 250px; /* li height + padding */
-}
 
 footer li {
     float: left;
@@ -168,6 +165,7 @@ footer li {
 }
 footer li:last-child {
     margin: 0;
+    margin-bottom: 30px;
 }
 
 footer i {
@@ -179,7 +177,10 @@ footer i {
 /* */
 footer form {
     clear: both; /* necessário para não se referir à altura perdida do ul */
-    padding: 20px 10% 30px;
+    padding: 40px 10% 30px;
+    width: 45%;
+
+    background-color: rgba(0, 0, 0, .2);
 }
 footer input, footer textarea, footer button {
     display: block;
