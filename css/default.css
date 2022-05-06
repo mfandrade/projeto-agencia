@@ -61,7 +61,7 @@ header {
 /* ---------- */
 .content {
     /* preferência de trabalhar com padding que com margin */
-    padding: 30px 25% 0 10%;
+    padding: 30px 20% 0 10%;
     /* .welcome:padding-top .agenciax-title:right .welcome:padding-left */
 
 }
@@ -82,18 +82,19 @@ header {
     font-size: 22px;
     font-weight: normal;
     color: #FFF;
-    margin-right: 25px;
+    margin-right: 15px;
     
+    text-align: center; /* centralizar texto com mais de uma linha. o mesmo que no word */
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* centralizar textos de uma linha */
+    align-items: center; /* centralizar verticalmente */
 }
 .content dl dd h3 {
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 /* 
